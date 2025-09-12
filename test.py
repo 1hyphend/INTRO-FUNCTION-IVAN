@@ -26,27 +26,54 @@ t.speed(200)
 
 # for i in range(100):
 #     def square(x):
-#         t.forward(x)
+#         t.forward(x+x)
 #         t.left(90)
-#         t.forward(x)
+#         t.forward(x+x)
 #         t.left(90)
-#         t.forward(x)
+#         t.forward(x+x)
 #         t.left(90)
-#         t.forward(x)
+#         t.forward(x+x)
 #         t.left(90)
 #         t.right(5)
-#     square(200)
+#     square(60)
+# length: 10
 
-sidelength = 100
-rotate = 90
-def square(x,y):
-    for i in range(4):
+# sidelength = 100
+# rotate = 90
+# def square(x,y):
+#     for i in range(4):
+#         t.forward(x)
+#         t.left(y)
+# square(120,90)
+# def addSquares(iRange):
+#     length = 90
+#     for i in range(iRange):
+#         square(length, 100)
+#         length += 25
+# addSquares(60)
+# string characters letters 
+
+# # # y=input("whats your name")
+# # #print(y)
+# def add(x,y):
+#     return(x + y)
+#     bill=add(5,10)
+
+for i in range(60):
+    def square(x,y):
         t.forward(x)
-        t.left(y)
-square(100,90)
-
-
-
-
+        t.right(y)
+    def square(x):
+        t.forward(x+5)
+        t.right(5)
+        t.forward(x)
+        t.right(90)
+        t.forward(x)
+        t.right(90)
+        t.forward(x)
+        t.right(90)
+        t.right(5)
+    square(60)
+length: 10
 
 turtle.done()
