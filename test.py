@@ -59,21 +59,53 @@ t.speed(200)
 #     return(x + y)
 #     bill=add(5,10)
 
-for i in range(60):
+# length: 10
+# def square(x):
+#         for i in range(4):
+#             t.forward(x)
+#             t.left(90)
+# #Floats
+# bill=31.56
+# Boolean or true/False
+
+# x=True
+# y=False
+# == is evaluation
+# ifx==10:
+#         print("x is 10")
+# elif x >10:
+#     print("x is greater than 10")
+# else:
+#     print("x less than 10")
+# students = ["sean", "Olivia" , "Ayaan" , "Youssef"]
+# # print(students[0])
+# # for student in students:
+# #         print(student) 
+# if "Olivia" in students:
+#     print("She's kinda lame")
+# else:
+#     print("She's stilllame but not in this class")
+
+# for student in students:
+#     if student== "Mia":
+
+#         print("Mia is extra lame")
+#     else:
+#         print("Mia not here")
+# name ="a n d y" 
+# print(len(name))
+# for letter in name:
+#     """for letter in name:
+#     print(letter)"""
+
+for i in range(5):
     def square(x,y):
         t.forward(x)
         t.right(y)
-    def square(x):
-        t.forward(x+5)
-        t.right(5)
         t.forward(x)
-        t.right(90)
+        t.right(y)
         t.forward(x)
-        t.right(90)
-        t.forward(x)
-        t.right(90)
-        t.right(5)
-    square(60)
-length: 10
-
+        t.left(y)
+        t.forward(x)  
+        square(200)
 turtle.done()
