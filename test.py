@@ -101,11 +101,12 @@ t.speed(200)
 for i in range(5):
     def square(x,y):
         t.forward(x)
-        t.right(y)
+        t.right(10)
         t.forward(x)
         t.right(y)
         t.forward(x)
         t.left(y)
         t.forward(x)  
+        addsquare(10)
         square(200)
 turtle.done()
