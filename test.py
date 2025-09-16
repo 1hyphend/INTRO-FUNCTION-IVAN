@@ -98,15 +98,25 @@ t.speed(200)
 #     """for letter in name:
 #     print(letter)"""
 
-for i in range(5):
-    def square(x,y):
-        t.forward(x)
-        t.right(10)
-        t.forward(x)
-        t.right(y)
+# for i in range(5):
+#     def square(x,y):
+#         t.forward(x)
+#         t.left(y)
+#         square(60)
+
+sidelength = 100
+rotate = 45
+def square(x,y):
+    for i in range(5):
         t.forward(x)
         t.left(y)
-        t.forward(x)  
-        addsquare(10)
-        square(200)
-turtle.done()
+        t.left(5)
+        t.forward(x)
+square(0,90)
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length, 90)
+        length += 5
+addSquares(60)
+turtle.done
