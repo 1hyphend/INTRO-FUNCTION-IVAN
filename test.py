@@ -2,7 +2,7 @@ import turtle
 from turtle import *
 t = Turtle()
 
-t.speed(200)
+t.speed(100)
 # #define the function name it then pass arguments/parameters
 # def add(x,y):
 #     print(x+y)
@@ -104,19 +104,52 @@ t.speed(200)
 #         t.left(y)
 #         square(60)
 
-sidelength = 100
-rotate = 45
+# money = True 
+# friend = True
+
+# def movie():
+#          if money or friend:
+#             print("movies")
+#             movie()
+# hw = False
+
+# def movies():
+#      if not hw:
+#           print("movie time")
+#      else:
+#           print("damn Russian bro")
+#           movies()
+
+# def factors(x,y):
+#     if x % y ==0:
+#         print("factor")
+# factors(25,5)
+
+# Assessment star
+# sidelength = 100
+# rotate = 45
+# def star(x,y):
+#     for i in range(5):
+#         t.forward(x)
+#         t.right(y)
+# star(45,144)
+# def addSquares(iRange):
+#     length = 25
+#     for i in range(iRange):
+#         star(length, 144)
+#         length += 5
+#         t.right(5)
+# addSquares(100)
+
 def square(x,y):
-    for i in range(5):
+    for i in range(4):
         t.forward(x)
-        t.left(y)
-        t.left(5)
-        t.forward(x)
-square(0,90)
+        t.right(y)
 def addSquares(iRange):
     length = 25
     for i in range(iRange):
         square(length, 90)
         length += 5
-addSquares(60)
+        t.right(5)
+addSquares(100)
 turtle.done
