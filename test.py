@@ -126,33 +126,33 @@ t.speed(100)
 # factors(25,5)
 
 # assessment square
-def square(x,y):
-    for i in range(4):
-        t.forward(x)
-        t.right(y)
-def addSquares(iRange):
-    length = 25
-    for i in range(iRange):
-        square(length, 90)
-        length += 5
-        t.right(5)
-addSquares(100)
+# def square(x,y):
+#     for i in range(4):
+#         t.forward(x)
+#         t.right(y)
+# def addSquares(iRange):
+#     length = 25
+#     for i in range(iRange):
+#         square(length, 90)
+#         length += 5
+#         t.right(5)
+# addSquares(100)
 
 # Assessment star
-sidelength = 100
-rotate = 45
-def star(x,y):
-    for i in range(5):
-        t.forward(x)
-        t.right(y)
-star(45,144)
-def addSquares(iRange):
-    length = 25
-    for i in range(iRange):
-        star(length, 144)
-        length += 5
-        t.right(5)
-addSquares(100)
+# sidelength = 100
+# rotate = 45
+# def star(x,y):
+#     for i in range(5):
+#         t.forward(x)
+#         t.right(y)
+# star(45,144)
+# def addSquares(iRange):
+#     length = 25
+#     for i in range(iRange):
+#         star(length, 144)
+#         length += 5
+#         t.right(5)
+# addSquares(100)
 
 
 turtle.done
